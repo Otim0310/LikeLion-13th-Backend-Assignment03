@@ -22,7 +22,7 @@ public class Hospital {
 
     private String name;
 
-    private int establishedyears;
+    private int establishedYears;
 
     @Enumerated(EnumType.STRING)
     @Column(length = 20)
@@ -32,9 +32,9 @@ public class Hospital {
     private List<Patient> patients = new ArrayList<>();
 
     @Builder
-    private Hospital(String name, int establishedyears, Location location) {
+    private Hospital(String name, int establishedYears, Location location) {
         this.name = name;
-        this.establishedyears = establishedyears;
+        this.establishedYears = establishedYears;
         this.location = location;
     }
 }
