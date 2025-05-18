@@ -4,7 +4,7 @@ import com.likelion.likelionassignment03.hospital.domain.Location;
 
 public record HospitalSaveRequestDto(
         String name,
-        int establishedyears,
+        int establishedYears,
         Location location
 ) {
 }
