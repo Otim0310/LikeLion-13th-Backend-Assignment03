@@ -7,13 +7,13 @@ import lombok.Builder;
 @Builder
 public record HospitalInfoResponseDto(
         String name,
-        int establishedyears,
+        int establishedYears,
         Location location
 ) {
     public static HospitalInfoResponseDto from(Hospital hospital) {
         return HospitalInfoResponseDto.builder()
                 .name(hospital.getName())
-                .establishedyears(hospital.getEstablishedyears())
+                .establishedYears(hospital.getEstablishedYears())
                 .location(hospital.getLocation())
                 .build();
     }
